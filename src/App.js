@@ -13,11 +13,13 @@ const App = () => {
   }
   return (
     <>
+    <div className="d-flex justify-content-center">
     <label>Title:-</label>
     <input placeholder="title" name="title" onChange={input_handler}/>
     <label>Author:-</label>
     <input placeholder="author" name="author" onChange={input_handler}/>
     <button type="button" onClick={submit_handler}>Submit</button>
+    </div>
     </>
     );
 }
