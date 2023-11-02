@@ -15,7 +15,7 @@
 
 
 // Rendering from App2 with UI component
-const Card = ({title,author}) => {
+const Card = ({title,author,ind_}) => {
   return(
       <>
       <div class="card" style={{width: "18rem"}}>
@@ -23,6 +23,7 @@ const Card = ({title,author}) => {
           <h5 class="card-title">{title}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{author}</h6>
           <a href="https://bento.me/dhruvik" class="card-link">Click here</a>
+          <button type="button">Index: {ind_}</button>
         </div>
       </div>
       </>
