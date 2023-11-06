@@ -37,14 +37,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //     </>
 // )
 
-// Run this for rendering App3.js file functional component [CRUD:Delete]
+// Run this for rendering App4.js file functional component [CRUD:Delete]
 // root.render(
 //     <>
 //     <App4/>
 //     </>
 // )
 
-// Run this for rendering App3.js file functional component [CRUD:Delete]
+// Run this for rendering App5.js file functional component [Static links]
 // root.render(
 //     <>
 //     <BrowserRouter>
@@ -53,6 +53,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //     </>
 // )
 
+// Run this for rendering App6.js file functional component [Dynamic link]
 root.render(
     <>
     <BrowserRouter>
