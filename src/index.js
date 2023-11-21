@@ -6,6 +6,7 @@ import App3 from './App3';
 import App4 from './App4';
 import App5 from './App5';
 import App6 from './App6';
+import App7 from './App7';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -54,10 +55,17 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App6.js file functional component [Dynamic link]
+// root.render(
+//     <>
+//     <BrowserRouter>
+//     <App6/>
+//     </BrowserRouter>
+//     </>
+// )
+
+// Run this for rendering App7.js file functional component [Pricewise filtering]
 root.render(
     <>
-    <BrowserRouter>
-    <App6/>
-    </BrowserRouter>
+    <App7/>
     </>
 )

@@ -14,7 +14,7 @@ const App3 = () => {
         console.log(result);
     }
     const delete_handler = (title_) => {
-        setResult( result?.filter( (e) => e.title !== title_) )
+        setResult( result?.filter( (one_result) => one_result.title !== title_) )
     }
 
     return (
