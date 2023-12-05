@@ -7,6 +7,8 @@ import App4 from './App4';
 import App5 from './App5';
 import App6 from './App6';
 import App7 from './App7';
+import App8 from './App8';
+import App9 from './App9';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -64,8 +66,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App7.js file functional component [Pricewise filtering]
+// root.render(
+//     <>
+//     <App7/>
+//     </>
+// )
+
+// Run this for rendering App8.js file functional component [Get & printing on page API using Axios]
+// root.render(
+//     <>
+//     <App8/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Get & post API using Axios]
 root.render(
     <>
-    <App7/>
+    <App9/>
     </>
 )
