@@ -1,5 +1,26 @@
 {
-  "posts": [],
+  "posts": [
+    {
+      "title": "Dhruvik",
+      "author": "Lathiya",
+      "id": 1
+    },
+    {
+      "title": "D",
+      "author": "Lathiya",
+      "id": 2
+    },
+    {
+      "title": "Elon",
+      "author": "Musk",
+      "id": 3
+    },
+    {
+      "title": "James",
+      "author": "Clear",
+      "id": 4
+    }
+  ],
   "comments": [],
   "profile": {
     "name": "typicode"

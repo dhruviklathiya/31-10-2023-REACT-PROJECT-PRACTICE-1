@@ -9,6 +9,8 @@ import App6 from './App6';
 import App7 from './App7';
 import App8 from './App8';
 import App9 from './App9';
+import App10 from './App10';
+import App11 from './App11';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -80,8 +82,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App9.js file functional component [Get & post API using Axios]
+// root.render(
+//     <>
+//     <App9/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE]
 root.render(
     <>
-    <App9/>
+    <App10/>
     </>
 )
+
+// Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE repeat]
+// root.render(
+//     <>
+//     <App11/>
+//     </>
+// )

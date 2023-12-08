@@ -20,7 +20,7 @@ const App9 = () => {
             author: author.current.value
         }
         axios.post("http://localhost:3001/posts",input_data).then((res)=>{
-            setmaindata([...maindata,input_data])
+            setmaindata([...maindata,res.data])
         })
     }
     const delete_data = (id) => {
