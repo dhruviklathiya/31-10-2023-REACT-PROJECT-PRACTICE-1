@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react'
 
 const App10 = () => {
+    const title = useRef()
+    const author = useRef()
     const [data,setdata] = useState([])
     const [updateData,setupdatedata] = useState([])
     useEffect(()=>{
@@ -28,8 +30,6 @@ const App10 = () => {
     const final_update = (e) => {
         setupdatedata({...updateData,[e.target.name]:e.target.value})
         }
-  const title = useRef()
-  const author = useRef()
   const submit_handler = () => {
     post_API()
   }
@@ -38,8 +38,7 @@ const App10 = () => {
     setdata(data.filter((one_)=> one_.id !== id))
   }
   const update_display = (id,ind_) => {
-    const updateData = data[ind_]
-    setupdatedata(updateData)
+    setupdatedata(data[ind_])
   }
   const update_API = () => {
     axios.put(`http://localhost:3001/posts/${updateData.id}`,updateData).then((res)=>{
