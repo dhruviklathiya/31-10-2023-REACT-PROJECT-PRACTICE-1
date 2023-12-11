@@ -11,6 +11,8 @@ import App8 from './App8';
 import App9 from './App9';
 import App10 from './App10';
 import App11 from './App11';
+import App12 from './App12';
+import App13 from './App13';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -89,11 +91,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE]
-root.render(
-    <>
-    <App10/>
-    </>
-)
+// root.render(
+//     <>
+//     <App10/>
+//     </>
+// )
 
 // Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE repeat]
 // root.render(
@@ -101,3 +103,17 @@ root.render(
 //     <App11/>
 //     </>
 // )
+
+// Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE repeat]
+// root.render(
+//     <>
+//     <App12/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Dynamic API]
+root.render(
+    <>
+    <App13/>
+    </>
+)
