@@ -2,7 +2,6 @@
 // Create 2 folders (1)Components (2)API
 
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import { delete_API, get_API, post_API, update_API } from './API/api'
 import { deleteData, getData, postData, updateData, url } from './Constant'
 
@@ -12,7 +11,7 @@ const App13 = () => {
     const [data,setData] = useState([])
     useEffect(()=>{
         get_API(url,getData).then((res)=>{
-            setData(res.data);
+            setData([res.data]);
         })
     },[])
     const input_handler = (e) => {
@@ -26,7 +25,7 @@ const App13 = () => {
     const delete_handler = (id) => {
         delete_API(url,deleteData,id).then((res)=>{
                 if(res.status == 200){
-                setData(data.filter((one_)=>one_.id !== id))
+                setData([data.filter((one_)=>one_.id !== id)])
             }
         })
     }
@@ -40,7 +39,7 @@ const App13 = () => {
         update_API(url,updateData,updateinput.id,updateinput).then((res)=>{
             console.log(res);
             get_API(url,getData).then((res)=>{
-                setData(res.data);
+                setData([res.data]);
             })
         })
     }
@@ -62,8 +61,8 @@ const App13 = () => {
                 <>
                 <h1>{val.title}</h1>
                 <h2>{val.author}</h2>
-                <button onClick={()=>{delete_handler(val.id)}}>Delete</button>
-                <button onClick={()=>{update_handler1(ind)}}>Update</button>
+                {/* <button onClick={()=>{delete_handler(val.id)}}>Delete</button> */}
+                {/* <button onClick={()=>{update_handler1(ind)}}>Update</button> */}
                 </>
             )
         })
