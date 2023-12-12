@@ -5,6 +5,7 @@ const App12 = () => {
     const [input,setInput] = useState({})
     const [updateinput,setUpdateInput] = useState({})
     const [data,setData] = useState([])
+    const [index,setIndex] = useState()
     useEffect(()=>{
         axios.get("http://localhost:3001/posts").then((res)=>{
             setData(res.data)
@@ -28,16 +29,13 @@ const App12 = () => {
     }
     const update_handler1 = (ind) => {
         setUpdateInput(data[ind])
+        setIndex(ind)
     }
-    const update_handler2 = () => {
-        axios.put(`http://localhost:3001/posts/${updateinput.id}`,updateinput).then((res)=>{
-            console.log(res);
+    const update_handler2 = async() => {
+        await axios.put(`http://localhost:3001/posts/${updateinput.id}`,updateinput).then((res)=>{
             // Virtual dom update without API calling
-            // setData([data.map((val_,ind_)=>{
-                //     if(val_.id == updateinput.id){
-                    //         data[ind_] = updateinput
-                    //     }
-                    // })])
+            data.splice(index,1,res.data)
+            setData([...data])
         })
     }
     return (

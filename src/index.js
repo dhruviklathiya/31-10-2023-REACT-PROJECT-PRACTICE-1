@@ -105,15 +105,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE repeat]
-// root.render(
-//     <>
-//     <App12/>
-//     </>
-// )
-
-// Run this for rendering App9.js file functional component [Dynamic API]
 root.render(
     <>
-    <App13/>
+    <App12/>
     </>
 )
+
+// Run this for rendering App9.js file functional component [Dynamic API]
+// root.render(
+//     <>
+//     <App13/>
+//     </>
+// )
