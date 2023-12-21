@@ -13,6 +13,8 @@ import App10 from './App10';
 import App11 from './App11';
 import App12 from './App12';
 import App13 from './App13';
+import App14 from './App14';
+import App15 from './App15';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -105,15 +107,50 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App9.js file functional component [GET & POST & DELETE & UPDATE repeat]
-root.render(
-    <>
-    <App12/>
-    </>
-)
+// root.render(
+//     <>
+//     <App12/>
+//     </>
+// )
 
-// Run this for rendering App9.js file functional component [Dynamic API]
+// Run this for rendering App9.js file functional component [Dynamic axios API CRUD]
 // root.render(
 //     <>
 //     <App13/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Local storage CRUD]
+// root.render(
+//     <>
+//     <App14/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Local storage CRUD using useRef hook] === pending
+root.render(
+    <>
+    <App15/>
+    </>
+)
+
+// Run this for rendering App9.js file functional component [Render page according to role] === pending
+// root.render(
+//     <>
+//     <App14/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Open modal when clicked view for update] === pending
+// root.render(
+//     <>
+//     <App14/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Validation for empty input in CRUD] === pending
+// root.render(
+//     <>
+//     <App14/>
 //     </>
 // )
