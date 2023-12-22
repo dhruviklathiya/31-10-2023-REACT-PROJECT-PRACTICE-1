@@ -15,6 +15,8 @@ import App12 from './App12';
 import App13 from './App13';
 import App14 from './App14';
 import App15 from './App15';
+import App16 from './App16';
+import App17 from './App17';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -127,19 +129,28 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //     </>
 // )
 
-// Run this for rendering App9.js file functional component [Local storage CRUD using useRef hook] === pending
-root.render(
-    <>
-    <App15/>
-    </>
-)
-
-// Run this for rendering App9.js file functional component [Render page according to role] === pending
+// Run this for rendering App9.js file functional component [Local storage CRUD using useRef hook]
 // root.render(
 //     <>
-//     <App14/>
+//     <App15/>
 //     </>
 // )
+
+// Run this for rendering App9.js file functional component [Sweetalert2]
+// root.render(
+//     <>
+//     <App16/>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Render page according to role] === pending
+root.render(
+    <>
+    <BrowserRouter>
+    <App17/>
+    </BrowserRouter>
+    </>
+)
 
 // Run this for rendering App9.js file functional component [Open modal when clicked view for update] === pending
 // root.render(
