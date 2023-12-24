@@ -17,6 +17,7 @@ import App14 from './App14';
 import App15 from './App15';
 import App16 from './App16';
 import App17 from './App17';
+import App18 from './App18';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -143,11 +144,20 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //     </>
 // )
 
-// Run this for rendering App9.js file functional component [Render page according to role] === pending
+// Run this for rendering App9.js file functional component [Render page according to role & CART]
+// root.render(
+//     <>
+//     <BrowserRouter>
+//     <App17/>
+//     </BrowserRouter>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Render page according to role, product availability & CART]
 root.render(
     <>
     <BrowserRouter>
-    <App17/>
+    <App18/>
     </BrowserRouter>
     </>
 )
