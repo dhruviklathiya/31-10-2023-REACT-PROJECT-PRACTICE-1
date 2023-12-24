@@ -8,7 +8,7 @@ const App17 = () => {
     // user can only view them and add & remove product from cart
     // let role = "admin"
     let role = "user"
-
+    let total = 0
     const product_name = useRef()
     const product_price = useRef()
 
@@ -84,12 +84,12 @@ const App17 = () => {
             <Navbar/>
             <div>
             <input type="text" name='product_name' placeholder='Product name' ref={product_name}/>
-            <input type="text" name='product_price' placeholder='Product price' ref={product_price}/>
+            <input type="number" name='product_price' placeholder='Product price' ref={product_price}/>
             <button type='button' onClick={submit_handle}>Submit</button>
             </div>
             <div>
             <input type="text" name='product_name' value={view.product_name} onChange={update_input_handler}/>
-            <input type="text" name='product_price' value={view.product_price} onChange={update_input_handler}/>
+            <input type="number" name='product_price' value={view.product_price} onChange={update_input_handler}/>
             <button type='button' onClick={update_handle}>Update</button>
             </div>
             {
@@ -97,7 +97,7 @@ const App17 = () => {
                 return (
                 <>
                 <h1>{val_.product_name}</h1>
-                <h6>{val_.product_price}</h6>
+                <h6>${val_.product_price}</h6>
                 <button onClick={()=>delete_handler(ind_)}>Delete</button>
                 <button onClick={()=>view_handler(ind_)}>View</button>
                 </>
@@ -116,7 +116,7 @@ const App17 = () => {
                     return (
                         <>
                         <h1>{val_.product_name}</h1>
-                        <h6>{val_.product_price}</h6>
+                        <h6>${val_.product_price}</h6>
                         <button type='button' onClick={()=>cart_add(val_,ind_)}>Add to cart</button>
                         </>
                     )
@@ -125,15 +125,17 @@ const App17 = () => {
             <h1>=== === === Cart === === ===</h1>
             {
                 cart?.map((val_,ind_)=>{
+                    total += Number(val_.product_price)
                     return (
                         <>
                         <h1>{val_.product_name}</h1>
-                        <h6>{val_.product_price}</h6>
+                        <h6>${val_.product_price}</h6>
                         <button type='button' onClick={()=>cart_item_remove(ind_)}>Remove from cart</button>
                         </>
                     )
                 })
             }
+            <h1>Total: ${total}</h1>
             </>
         )
     }
