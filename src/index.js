@@ -19,6 +19,7 @@ import App16 from './App16';
 import App17 from './App17';
 import App18 from './App18';
 import App19 from './App19';
+import App20 from './App20';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
@@ -164,17 +165,19 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App9.js file functional component [Open modal when clicked view for update]
-root.render(
-    <>
-    <BrowserRouter>
-    <App19/>
-    </BrowserRouter>
-    </>
-)
-
-// Run this for rendering App9.js file functional component [Validation for empty input in CRUD] === pending
 // root.render(
 //     <>
-//     <App14/>
+//     <BrowserRouter>
+//     <App19/>
+//     </BrowserRouter>
 //     </>
 // )
+
+// Run this for rendering App9.js file functional component [Validation for empty input in CRUD]
+root.render(
+    <>
+        <BrowserRouter>
+            <App20 />
+        </BrowserRouter>
+    </>
+)
