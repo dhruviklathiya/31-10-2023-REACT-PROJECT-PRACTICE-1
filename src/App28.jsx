@@ -15,32 +15,39 @@ const App28 = () => {
             console.log(err);
         })
     }
+
     return (
         <>
-            <label>Search here:</label>
-            <input type='text' onChange={(e) => setSearch(e.target.value)} />
-            <table border={1} align='center'>
-                <tr>
-                    <th>Id</th>
-                    <th>UserId</th>
-                    <th>Title</th>
-                </tr>
-                {
-                    data?.filter((item) => {
-                        return search.toLowerCase() === '' ? item : item.title.toLowerCase().includes(search.toLowerCase())
-                    }).map((val_, ind_) => {
-                        return (
-                            <>
-                                <tr>
-                                    <th>{val_.id}</th>
-                                    <th>{val_.userId}</th>
-                                    <th>{val_.title}</th>
-                                </tr>
-                            </>
-                        )
-                    })
-                }
-            </table>
+            <div class="container table-responsive py-5">
+                <label>Search here:</label>
+                <input className='m-3' type='text' onChange={(e) => setSearch(e.target.value)} />
+                <table class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Id</th>
+                            <th>UserId</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            data?.filter((item) => {
+                                return search.toLowerCase() === '' ? item : item.title.toLowerCase().includes(search.toLowerCase())
+                            }).map((val_, ind_) => {
+                                return (
+                                    <>
+                                        <tr>
+                                            <th>{val_.id}</th>
+                                            <th>{val_.userId}</th>
+                                            <th>{val_.title}</th>
+                                        </tr>
+                                    </>
+                                )
+                            })
+                        }
+                    </tbody>
+                </table>
+            </div>
         </>
     )
 }
