@@ -32,10 +32,18 @@ const App20 = () => {
             product_price: product_price.current.value,
             product_available: product_available.current.value,
         }
-        if (input.product_name !== '' && input.product_price !== '' && input.product_available !== '') {
+        if (input.product_name && input.product_price && input.product_available) {
             arr.push(input)
             localStorage.setItem("detail", JSON.stringify(arr))
             setdata([...arr])
+        }
+        else{
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "All inputs are necessary",
+                footer: '<a href="#">Need help?</a>'
+              });
         }
     }
 
@@ -60,7 +68,7 @@ const App20 = () => {
     }
 
     const update_handle = () => {
-        if (view.product_name !== '' && view.product_price !== '' && view.product_available !== '') {
+        if (view.product_name && view.product_price && view.product_available) {
             arr.splice(index, 1, view)
             localStorage.setItem("detail", JSON.stringify(arr))
             setdata([...arr])
@@ -75,7 +83,7 @@ const App20 = () => {
                 icon: "error",
                 title: "Oops...",
                 text: "All inputs are necessary",
-                footer: '<a href="#">Why do I have this issue?</a>'
+                footer: '<a href="#">Need help?</a>'
               });
         }
     }

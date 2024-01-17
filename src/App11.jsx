@@ -108,7 +108,7 @@ const App11 = () => {
             <>
             <h1>{val_.title}</h1>
             <h1>{val_.author}</h1>
-            <button type="button" onClick={()=>{delete_handler}}>Delete</button>
+            {/* <button type="button" onClick={()=>{delete_handler}}>Delete</button> */}
             </>
         )
     })}

@@ -6,8 +6,8 @@ import Swal from 'sweetalert2'
 const App19 = () => {
     // Here admin can add product
     // user can only view them and add & remove product from cart
-    // let role = "admin"
-    let role = "user"
+    let role = "admin"
+    // let role = "user"
     let total = 0
     const product_name = useRef()
     const product_price = useRef()

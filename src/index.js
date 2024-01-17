@@ -20,9 +20,15 @@ import App17 from './App17';
 import App18 from './App18';
 import App19 from './App19';
 import App20 from './App20';
+import App21 from './App21';
+import App22 from './App22';
+import App23 from './App23';
+import App24 from './App24';
+import App28 from './App28';
 import Card from './Card';
 import data from './Data';
 import { BrowserRouter } from 'react-router-dom';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // Run this for rendering App.js and Card
@@ -174,10 +180,92 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App9.js file functional component [Validation for empty input in CRUD]
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App20 />
+//         </BrowserRouter>
+//     </>
+// )
+
+// Run this for rendering App9.js file functional component [Validation for empty input & same input not valid in CRUD]
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App21 />
+//         </BrowserRouter>
+//     </>
+// )
+
+// localstorage CRUD
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App22 />
+//         </BrowserRouter>
+//     </>
+// )
+
+// Problem: We are bounded while transferring data from one file to another we must pass them by props and which leads to prblem like props drilling
+// Solution: context API but problem with contextAPI is that it does not proivide fully centralised state
+// Solution: Centralised state to manage data == redux toolkit ||| saga ||| persist
+// prefer: https://github.com/dhruviklathiya/31-12-2023-REACT-REDUX-SAGA-CUSTOM-FOLDER-STRUCTURE
+
+// Cookies in react using npm i js-cookie
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App23 />
+//         </BrowserRouter>
+//     </>
+// )
+
+// Auth 0
+// root.render(
+//     <BrowserRouter>
+//         <Auth0Provider
+//             domain="react-tenant-1.us.auth0.com"
+//             clientId="17BFjt4lm1LcIk5pdfU4KphWWEsA8qfH"
+//             authorizationParams={{
+//                 redirect_uri: window.location.origin
+//             }}
+//         >
+//             <App24 />
+//         </Auth0Provider>
+//     </BrowserRouter>,
+// )
+
+// Firebase
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App23 />
+//         </BrowserRouter>
+//     </>
+// )
+
+// Firebase in redux
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App23 />
+//         </BrowserRouter>
+//     </>
+// )
+// Firebase crud
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App23 />
+//         </BrowserRouter>
+//     </>
+// )
+
+// To-do table with searching, sorting, filters
 root.render(
     <>
         <BrowserRouter>
-            <App20 />
+            <App28 />
         </BrowserRouter>
     </>
 )
