@@ -21,16 +21,15 @@ const App = () => {
   }
 
   const submit_handler = () => {
-    console.log(INPUT);
     setDATA(INPUT)
   }
 
   return (
     <>
       <h1>Hello useRef with single state and multiple fields</h1>
-      <input value={DATA.fname} name='firstname' ref={fname} onChange={input_handler} />
-      <input value={DATA.lname} name='lastname' ref={lname} onChange={input_handler} />
-      <input value={DATA.emailaddress} name='email' ref={emailaddress} onChange={input_handler} />
+      <input value={INPUT.fname} name='firstname' ref={fname} onChange={input_handler} />
+      <input value={INPUT.lname} name='lastname' ref={lname} onChange={input_handler} />
+      <input value={INPUT.emailaddress} name='email' ref={emailaddress} onChange={input_handler} />
       <button type='button' onClick={submit_handler}>SUBMIT</button>
       <h1>{DATA.fname}</h1>
       <h1>{DATA.lname}</h1>
