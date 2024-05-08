@@ -1,13 +1,13 @@
 // const Card = ({val_}) => {
 //     return(
 //         <>
-//         <div class="card" style={{width: "18rem"}}>
-//           <div class="card-body">
-//             <h5 class="card-title">{val_.title}</h5>
-//             <h6 class="card-subtitle mb-2 text-muted">{val_.author}</h6>
-//             <a href="https://bento.me/dhruvik" class="card-link">Click here</a>
-//           </div>
-//         </div>
+// <div class="card" style={{width: "18rem"}}>
+//   <div class="card-body">
+//     <h5 class="card-title">{val_.title}</h5>
+//     <h6 class="card-subtitle mb-2 text-muted">{val_.author}</h6>
+//     <a href="https://bento.me/dhruvik" class="card-link">Click here</a>
+//   </div>
+// </div>
 //         </>
 //     )
 // }
@@ -33,10 +33,10 @@ import { Link } from "react-router-dom"
 // }
 
 // For App6
-const Card = ({title,author,ind_}) => {
-  return(
-      <>
-      <div class="card" style={{width: "18rem"}}>
+const Card = ({ title, author, ind_ }) => {
+  return (
+    <>
+      <div class="card" style={{ width: "18rem" }}>
         <div class="card-body">
           <h5 class="card-title">{title}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{author}</h6>
@@ -44,7 +44,7 @@ const Card = ({title,author,ind_}) => {
           <p>{ind_}</p>
         </div>
       </div>
-      </>
+    </>
   )
 }
 export default Card

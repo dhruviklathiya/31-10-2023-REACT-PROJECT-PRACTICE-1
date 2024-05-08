@@ -24,6 +24,7 @@ import App21 from './App21';
 import App22 from './App22';
 import App23 from './App23';
 import App24 from './App24';
+import App25 from './App25';
 import App28 from './App28';
 import Card from './Card';
 import data from './Data';
@@ -44,13 +45,18 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // Run this for rendering App2.js file functional component [CRUD: Create,Read || POST & GET]
+root.render(
+    <>
+        <App />
+    </>
+)
 // root.render(
 //     <>
 //     <App2/>
 //     </>
 // )
 
-// Run this for rendering App3.js file functional component [CRUD:Delete]
+// Run this for rendering App3.js file functional component [CRUD:Delete]p
 // root.render(
 //     <>
 //     <App3/>
@@ -239,7 +245,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(
 //     <>
 //         <BrowserRouter>
-//             <App23 />
+//             <App25 />
 //         </BrowserRouter>
 //     </>
 // )
@@ -262,10 +268,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // )
 
 // To-do table with searching, sorting, filters
-root.render(
-    <>
-        <BrowserRouter>
-            <App28 />
-        </BrowserRouter>
-    </>
-)
+// root.render(
+//     <>
+//         <BrowserRouter>
+//             <App28 />
+//         </BrowserRouter>
+//     </>
+// )
